@@ -15,13 +15,8 @@ try{
         method: "get",
         url: `https://api.wazirx.com/api/v2/tickers`,
       });
-    //  response.json(stock);
-    // let response = await stock.json();
-    // var hel=JSON.parse()
-    
-var result = Object.keys(stock).map((key) => [Number(key), stock[key]]);
-let r=new Map(Object.entries(stock));
-console.log(r.get("low"));
+
+console.log(stoclkl);
     // console.log(Object.parse(stock));
 }
 catch(error){
@@ -29,8 +24,8 @@ catch(error){
     res.status(400).json({error:"Not updated"})
 }
 })
-// add question to Striver array
-router.post('/updatedata/striver/:id', async (req,res) => {
+
+router.post('/updatedata, async (req,res) => {
 try{
     
     // res.json({success:"Question Done !"});
